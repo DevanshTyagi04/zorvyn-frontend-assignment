@@ -105,7 +105,7 @@ export function DashboardCharts() {
         <CardHeader>
           <CardTitle>Income vs Expense (Last 7 Days)</CardTitle>
         </CardHeader>
-        <CardContent className="h-64">
+        <CardContent className="h-80 sm:h-[350px]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={historyData}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" opacity={0.2} />
@@ -124,7 +124,7 @@ export function DashboardCharts() {
         <CardHeader>
           <CardTitle>Expenses by Category</CardTitle>
         </CardHeader>
-        <CardContent className="h-64 flex justify-center items-center">
+        <CardContent className="h-80 sm:h-[350px] flex justify-center items-center">
           {categoryData.length > 0 ? (
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
